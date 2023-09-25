@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+</head>
+             <marquee><h1> BLOG POSTING APPLICATION</h1></marquee>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="id">ID</label>
+                        <input type="text" name="id" id="id">
+                    </div>
+                    <div>
+                        <label for="aut">AUTHER NAME</label>
+                        <input type="text" name="aut" id="aut">
+                    </div>
+                    <div>
+                        <label for="title">TITLE</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div>
+                        <label for="con">CONTENT</label>
+                        <input type="text" name="con" id="con">
+                    </div>
+                    <div><br>
+                        <label for="date">POST-DATE</label><br><br>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <br>
+                    <div> 
+                       
+                        <label for="cmt">COMMENT</label>
+                        <input type="text" name="cmt" id="cmt">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="SUBMIT">
+                        <input type="reset" value="RESET">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>AUTHER</th>
+                                <th>TITLE</th>
+                                <th>CONTENT</th>
+                                <th>DATE</th>
+                                <th>COMMENT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
